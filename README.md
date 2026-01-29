@@ -42,3 +42,17 @@ Example:
 MONGO_URI=mongodb://<username>:<password>@localhost:27017/test_app?authSource=admin
 PORT=3000
 ```
+## Using docker compose:
+In the .yaml file directory run the following command:
+```
+docker compose -f <filename> up -d
+
+```
+This pulls the image from the docker hub and run multiple containers.
+This file will create a default network to run multiple container in same network
+
+To remove the image and container:
+In the .yaml file folder enter this command:
+```
+docker compose -f <filename> down
+```
